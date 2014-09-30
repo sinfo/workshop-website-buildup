@@ -78,7 +78,7 @@
 							<ul>
 								<li><b>The main structure:</b> What identifies an HTML document</li>
 							</ul>
-							```html5
+							```html
 							<!DOCTYPE html>
 							<html>
 								<head>
@@ -98,7 +98,7 @@
 							<ul>
 								<li><b>Tags, Attributes and Elements:</b> The stuff that makes up HTML.</li>
 							</ul>
-							```html5
+							```html
 							(...)
 								<tag attribute="stuff">
 								  All of this is an element
@@ -113,7 +113,7 @@
 							<ul>
 								<li><b>Page Titles:</b> Titles. For Pages. A difficult concept, we know…</li>
 							</ul>
-							```html5
+							```html
 							(...)
 								<head>
 								  <meta charset="utf-8">
@@ -129,7 +129,7 @@
 							<ul>
 								<li><b>Paragraphs:</b> Structuring your content with paragraphs.</li>
 							</ul>
-							```html5
+							```html
 							(...)
 								<p>
 								  This is a paragraph.
@@ -153,7 +153,7 @@
 							<ul>
 								<li><b>Headings:</b> The six levels of headings.</li>
 							</ul>
-							```html5
+							```html
 							(...)
 								<h1>
 								  This a big header!
@@ -183,7 +183,7 @@
 							<ul>
 								<li><b>Lists:</b> How to define ordered and unordered lists.</li>
 							</ul>
-							```html5
+							```html
 							(...)
 								<ul>
 									<li>This the 1st element of an unordered list</li>
@@ -215,7 +215,7 @@
 							<ul>
 								<li><b>Images:</b> Adding something a bit more than text…</li>
 							</ul>
-							```html5
+							```html
 							(...)
 								<img src="my_awesome_local_pic.jpg">
 								<img src="http://www.sinfo.org/img/team/francisco_dias_sinfo.jpg">
@@ -230,7 +230,7 @@
 							<ul>
 								<li><b>Tables:</b> How to use tabular data.</li>
 							</ul>
-							```html5
+							```html
 							(...)
 								<table>
 								  <tr>
@@ -266,7 +266,7 @@
 							<ul>
 								<li><b>Forms:</b> Text boxes and other user-input things.</li>
 							</ul>
-							```html5
+							```html
 							(...)
 								<form>
 									Username: <input type="text" name="username"><br>
@@ -294,7 +294,7 @@
 							Now you try it! Set your own html page like this.
 							
 							Create `test.html` with the following contents:
-							```html5
+							```html
 							<!DOCTYPE html>
 							<html>
 								<head>
@@ -320,19 +320,210 @@
 							CSS or Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language. In our case HTML!
 						</p>
 					</section>
-					<section>
-						<h2>How is it used?</h2>
-						<p>
+
+					<section data-markdown>
+						<script type="text/template">
+							<h2>How is it used?</h2>
+							<ul>
 							Well first of all we need HTML to style up. If the content isn’t there CSS will not make it pop up out of nowhere.
-						</p>
-						<aside class="notes">
-							p.ex. : (change font color)
-							This how you change font color.
-							p.ex. : (more font styling)
-							(...)
-							p.ex.: class and id
-						</aside>
+							</br>Each page must include a link to the style sheet
+							</ul>
+							```html
+							<!DOCTYPE html>
+							<html>
+								<head>
+								  <meta charset="utf-8">
+								  <title>Test</title>
+								  <link rel="stylesheet" type="text/css" href="style.css">
+								</head>
+								<body>
+									Hello world!
+								</body>
+							</html>	
+							```
+
+							<aside class="notes">
+								The selector points to the HTML element you want to style.
+
+								The declaration block contains one or more declarations separated by semicolons.
+
+								Each declaration includes a property name and a value, separated by a colon.
+							</aside>
+						</script>
 					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>A selector and a declaration block:</b> The consistency of a CSS rule.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									color:red;
+									text-align:center;
+								}
+							(...)
+							```
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Background Color:</b> The background-color property is used to set the background-color of the text.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									background-color: red;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  The backgroud is red.
+								</p>
+							(...)
+							```
+							<p style="background-color: red; width: 400px; margin: auto">
+								The backgroud is red.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Text Color:</b> The color property is used to set the color of the text.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									color: red;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  The text is red.
+								</p>
+							(...)
+							```
+							<p style="color: red;">
+								The text is red.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Font Family, style and size:</b> They set .</li>
+							</ul>
+							```css
+							(... css file)								p {
+									font-family: "Times New Roman", Times, serif;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  This is a paragraph, shown in the Times New Roman font.
+								</p>
+							(...)
+							```
+							<p style="font-family: "Times New Roman", Times, serif;">
+								This is a paragraph, shown in the Times New Roman font.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Borders:</b> The border-style property specifies what kind of border to display.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									border-style: solid;
+									border-width: 1px;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  White 1px border;
+								</p>
+							(...)
+							```
+							<p style="border-style: solid;	border-width: 1px; width: 400px; margin:auto;">
+								White 1px border
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Margin:</b> The margin clears an area around an element (outside the border).</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									margin-right: 100px;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  This paragraph is 100px to the right.
+								</p>
+							(...)
+							```
+							<p style="marign:100px; width: 500px;">
+								This paragraph is 100px to the right.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Padding:</b> The padding clears an area around the content (inside the border) of an element.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									padding-right: 100px;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  This paragraph is 100px to the right.
+								</p>
+							(...)
+							```
+							<p style=" border-style: solid;	border-width: 1px; width: 400px; padding: 100px;">
+								This paragraph is 100px to the right.
+							</p>
+						</script>
+					</section>
+
 				</section>
 
 				<section>
