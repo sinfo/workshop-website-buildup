@@ -72,49 +72,75 @@
 						</p>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+						<h2>How is it used?</h2>
+						<ul>
+							<li><b>Tags, Attributes and Elements:</b> The stuff that makes up HTML.</li>
+							<li><b>Page Titles:</b> Titles. For Pages. A difficult concept, we know…</li>
+							<li><b>Paragraphs:</b> Structuring your content with paragraphs.</li>
+							<li><b>Headings:</b> The six levels of headings.</li>
+							<li><b>Lists:</b> How to define ordered and unordered lists.</li>
+							<li><b>Links:</b> How to makes links to other pages, and elsewhere.</li>
+							<li><b>Images:</b> Adding something a bit more than text…</li>
+							<li><b>Tables:</b> How to use tabular data.</li>
+							<li><b>Forms:</b> Text boxes and other user-input things.</li>
+						</ul>
 					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+					
+					<section data-markdown>
+						<script type="text/template">
+							## Hands-on
+
+							Now you try it! Set your own html page like this.
+							
+							Create `test.html` with the following contents:
+							```
+							<!DOCTYPE html>
+							<html>
+								<head>
+								  <meta charset="utf-8">
+								  <title>Test</title>
+								</head>
+								<body>
+									Hello world!
+								</body>
+							</html>
+							```
+
+							Use the elements referenced previously to make your own html page.
+				
+							Simple right? But what we want to style it a little bit!?
+						</script>
 					</section>
 				</section>
-
 				<section>
 					<section>
 						<h1>CSS</h1>
 						<p>
-
+							CSS or Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language. In our case HTML!
 						</p>
 					</section>
 					<section>
-						<h2>What is CSS?</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>What is it used for?</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Quick insight and code snippets</h2>
-						<p>(kind of, eih this sets a margin, this sets font color wtv,...)</p>
+						<h2>How is it used?</h2>
+						<p>
+							Well first of all we need HTML to style up. If the content isn’t there CSS will not make it pop up out of nowhere.
+						</p>
+						<aside class="notes">
+							p.ex. : (change font color)
+							This how you change font color.
+							p.ex. : (more font styling)
+							(...)
+							p.ex.: class and id
+						</aside>
 					</section>
 				</section>
 
+				<section>
+					<h2>Intro conclusion</h2>
+					<p>
+					With this we wanted to show you one important key concept that you must always remember! HTML is used for meaning and CSS is used only for the presentation. As you saw it, HTML is nothing more than a bunch of tags that structure our content. The visual formatting of that content comes later when we tackle CSS.
+					</p>
+				</section>
+				
 				<section>
 					<section>
 						<h1>Templates</h1>
@@ -171,20 +197,16 @@
 					<section>
 						<h1>linkify</h1>
 						<pre><code data-trim contenteditable>
-	function linkify( selector ) {
-	  if( supports3DTransforms ) {
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>JS Bin</title>
+	</head>
+	<body>
 
-	    var nodes = document.querySelectorAll( selector );
-
-	    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-	      var node = nodes[i];
-
-	      if( !node.className ) {
-	        node.className += ' roll';
-	      }
-	    }
-	  }
-	}
+	</body>
+</html>
 						</code></pre>
 					</section>
 				</section>
