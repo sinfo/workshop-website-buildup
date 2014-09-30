@@ -556,10 +556,68 @@
 						</script>
 					</section>
 
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>ID:</b> Select a specific element</li>
+							</ul>
+							```css
+							(... css file)
+								#my-special-element {
+									font-style: italic;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p id="my-special-element">
+								  This special element is in italic. 
+								</p>
+							(...)
+							```
+							<p style=" font-style: italic;">
+								This special element is in italic. 
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Class:</b> Set a specific style for a set of elements</li>
+							</ul>
+							```css
+							(... css file)
+								.my-special-set-of-element {
+									font-style: bold;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p class="my-special-set-of-element">
+								  This special set of elements is in bold. 
+								</p>
+								<h4 class="my-special-set-of-element">
+								  This special set of elements is in bold. 
+								</h4>
+							(...)
+							```
+							<p style=" font-style: bold;">
+								This special set of elements is in bold. 
+							</p>
+							<h4 style=" font-style: bold;">
+							  This special set of elements is in bold. 
+							</h4>
+						</script>
+					</section>
+
 				</section>
 
 				<section>
-					<h2>Intro conclusion</h2>
+					<h2>In conclusion</h2>
 					<p>
 					With this we wanted to show you one important key concept that you must always remember! HTML is used for meaning and CSS is used only for the presentation. As you saw it, HTML is nothing more than a bunch of tags that structure our content. The visual formatting of that content comes later when we tackle CSS.
 					</p>
@@ -571,7 +629,7 @@
 						<h3>But is this all of it!? No! Not a chance.</h3>
 					</section>
 
-					<section data-markdown>
+					<section>
 						<h2>Here's an example of what we mean...</h2>
 						<h3><a href="https://raw.githubusercontent.com/sapo/Ink/gh-pages/cookbook/3-boxes.html">Source</a></h3>
 						<h3><a href="http://ink.sapo.pt/cookbook/3-boxes.html">Demo</a></h3>
