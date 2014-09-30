@@ -324,9 +324,31 @@
 					<section data-markdown>
 						<script type="text/template">
 							<h2>How is it used?</h2>
+
+							Well, first of all, we need HTML to style up. If the content isn’t there CSS will not make it pop up out of nowhere.<br>
+							
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
 							<ul>
-							Well first of all we need HTML to style up. If the content isn’t there CSS will not make it pop up out of nowhere.
-							</br>Each page must include a link to the style sheet
+								<li>You can style elements directly in the html (altough you should <b>AVOID</b> this as much as you can!).</li>
+							</ul>
+							```html
+							(...)
+								<p style="color:blue"> This paragraph is styled up!</p>
+							(...)
+							```
+							<p style="color:blue"> This paragraph is styled up!</p>
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li>Or you can include a link to a style sheet (best prastice)</li>
 							</ul>
 							```html
 							<!DOCTYPE html>
@@ -341,14 +363,6 @@
 								</body>
 							</html>	
 							```
-
-							<aside class="notes">
-								The selector points to the HTML element you want to style.
-
-								The declaration block contains one or more declarations separated by semicolons.
-
-								Each declaration includes a property name and a value, separated by a colon.
-							</aside>
 						</script>
 					</section>
 
@@ -363,6 +377,17 @@
 									color:red;
 									text-align:center;
 								}
+
+								h2, h1 {
+									color:blue;
+									text-align:center;
+								}
+
+								ul>li {
+									color:yellow;
+									text-align:center;
+								}
+
 							(...)
 							```
 						</script>
@@ -391,6 +416,13 @@
 							<p style="background-color: red; width: 400px; margin: auto">
 								The backgroud is red.
 							</p>
+							<aside class="notes">
+								The selector points to the HTML element you want to style.
+
+								The declaration block contains one or more declarations separated by semicolons.
+
+								Each declaration includes a property name and a value, separated by a colon.
+							</aside>
 						</script>
 					</section>
 
@@ -423,7 +455,7 @@
 					<section data-markdown>
 						<script type="text/template">
 							<ul>
-								<li><b>Font Family, style and size:</b> They set .</li>
+								<li><b>Font Family:</b> Set the font of an element.</li>
 							</ul>
 							```css
 							(... css file)								p {
