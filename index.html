@@ -70,24 +70,225 @@
 						<p>
 							HTML or HyperText Markup Language is the standard markup language used to create web pages.
 
-							It’s what set’s the basic structure of your website.
+							It’s what sets the basic structure of your website.
 						</p>
 					</section>
-					<section>
-						<h2>How is it used?</h2>
-						<ul>
-							<li><b>Tags, Attributes and Elements:</b> The stuff that makes up HTML.</li>
-							<li><b>Page Titles:</b> Titles. For Pages. A difficult concept, we know…</li>
-							<li><b>Paragraphs:</b> Structuring your content with paragraphs.</li>
-							<li><b>Headings:</b> The six levels of headings.</li>
-							<li><b>Lists:</b> How to define ordered and unordered lists.</li>
-							<li><b>Links:</b> How to makes links to other pages, and elsewhere.</li>
-							<li><b>Images:</b> Adding something a bit more than text…</li>
-							<li><b>Tables:</b> How to use tabular data.</li>
-							<li><b>Forms:</b> Text boxes and other user-input things.</li>
-						</ul>
+
+					<section data-markdown>
+						<script type="text/template">
+							<h2>How is it used?</h2>
+							<ul>
+								<li><b>The main structure:</b> What identifies an HTML document</li>
+							</ul>
+							```html
+							<!DOCTYPE html>
+							<html>
+								<head>
+								  <meta charset="utf-8">
+								  <title>Test</title>
+								</head>
+								<body>
+									Hello world!
+								</body>
+							</html>
+							```
+						</script>
 					</section>
-					
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Tags, Attributes and Elements:</b> The stuff that makes up HTML.</li>
+							</ul>
+							```html
+							(...)
+								<tag attribute="stuff">
+								  All of this is an element
+								</tag>
+							(...)
+							```
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Page Titles:</b> Titles. For Pages. A difficult concept, we know…</li>
+							</ul>
+							```html
+							(...)
+								<head>
+								  <meta charset="utf-8">
+								  <title>That awesome workshop we did with SINFO and AEFCL</title>
+								</head>
+							(...)
+							```
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Paragraphs:</b> Structuring your content with paragraphs.</li>
+							</ul>
+							```html
+							(...)
+								<p>
+								  This is a paragraph.
+								</p>
+								<p>
+								  This is other paragraph.
+								</p>
+							(...)
+							```
+							<p>
+							  This is a paragraph.
+							</p>
+							<p>
+							  This is other paragraph.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Headings:</b> The six levels of headings.</li>
+							</ul>
+							```html
+							(...)
+								<h1>
+								  This a big header!
+								</h1>
+								<h2>
+								  This a header smaller than h1.
+								</h2>
+								<h6>
+								  This is the smallest header.
+								</h6>
+							(...)
+							```
+							<h1>
+							  This a big header!
+							</h1>
+							<h2>
+							  This a header smaller than h1.
+							</h2>
+							<h6>
+							  This is the smallest header.
+							</h6>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Lists:</b> How to define ordered and unordered lists.</li>
+							</ul>
+							```html
+							(...)
+								<ul>
+									<li>This the 1st element of an unordered list</li>
+									<li>And this the second</li>
+									<li>Need to guess?</li>
+								</ul>
+								<ol>
+									<li>This the 1st element of an ordered list</li>
+									<li>And this the... yeah you know</li>
+									<li>Yeah, keep on counting</li>
+								</ol>
+							(...)
+							```
+							<ul>
+								<li>This the 1st element of an unordered list</li>
+								<li>And this the second</li>
+								<li>Need to guess?</li>
+							</ul>
+							<ol>
+								<li>This the 1st element of an ordered list</li>
+								<li>And this the... yeah you know</li>
+								<li>Yeah, keep on counting</li>
+							</ol>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Images:</b> Adding something a bit more than text…</li>
+							</ul>
+							```html
+							(...)
+								<img src="my_awesome_local_pic.jpg">
+								<img src="http://www.sinfo.org/img/team/francisco_dias_sinfo.jpg">
+							(...)
+							```
+							<img src="http://www.sinfo.org/img/team/francisco_dias_sinfo.jpg">
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Tables:</b> How to use tabular data.</li>
+							</ul>
+							```html
+							(...)
+								<table>
+								  <tr>
+								    <td>Casemiro</td>
+								    <td>Gestrudes</td> 
+								    <td>Sizenante</td>
+								  </tr>
+								  <tr>
+								    <td>14</td>
+								    <td>13</td> 
+								    <td>5</td>
+								  </tr>
+								</table>
+							(...)
+							```
+							<table>
+							  <tr>
+							    <td>Casemiro</td>
+							    <td>Gestrudes</td> 
+							    <td>Sizenante</td>
+							  </tr>
+							  <tr>
+							    <td>14</td>
+							    <td>13</td> 
+							    <td>5</td>
+							  </tr>
+							</table>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Forms:</b> Text boxes and other user-input things.</li>
+							</ul>
+							```html
+							(...)
+								<form>
+									Username: <input type="text" name="username"><br>
+									Password: <input type="text" name="password"><br>
+									Gender:<br>
+									<input type="radio" name="sex" value="male">Male<br>
+									<input type="radio" name="sex" value="female">Female
+								</form>
+							(...)
+							```
+							<form>
+								Username: <input type="text" name="username"><br>
+								Password: <input type="text" name="password"><br>
+								Gender:<br>
+								<input type="radio" name="sex" value="male">Male<br>
+								<input type="radio" name="sex" value="female">Female
+							</form>
+						</script>
+					</section>
+
 					<section data-markdown>
 						<script type="text/template">
 							## Hands-on
@@ -95,7 +296,7 @@
 							Now you try it! Set your own html page like this.
 							
 							Create `test.html` with the following contents:
-							```
+							```html
 							<!DOCTYPE html>
 							<html>
 								<head>
@@ -121,23 +322,334 @@
 							CSS or Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language. In our case HTML!
 						</p>
 					</section>
-					<section>
-						<h2>How is it used?</h2>
-						<p>
-							Well first of all we need HTML to style up. If the content isn’t there CSS will not make it pop up out of nowhere.
-						</p>
-						<aside class="notes">
-							p.ex. : (change font color)
-							This how you change font color.
-							p.ex. : (more font styling)
-							(...)
-							p.ex.: class and id
-						</aside>
+
+					<section data-markdown>
+						<script type="text/template">
+							<h2>How is it used?</h2>
+
+							Well, first of all, we need HTML to style up. If the content isn’t there CSS will not make it pop up out of nowhere.<br>
+							
+						</script>
 					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li>You can style elements directly in the html (altough you should <b>AVOID</b> this as much as you can!).</li>
+							</ul>
+							```html
+							(...)
+								<p style="color:blue"> This paragraph is styled up!</p>
+							(...)
+							```
+							<p style="color:blue"> This paragraph is styled up!</p>
+
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li>Or you can include a link to a style sheet (best practice)</li>
+							</ul>
+							```html
+							<!DOCTYPE html>
+							<html>
+								<head>
+								  <meta charset="utf-8">
+								  <title>Test</title>
+								  <link rel="stylesheet" type="text/css" href="style.css">
+								</head>
+								<body>
+									Hello world!
+								</body>
+							</html>	
+							```
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>A selector and a declaration block:</b> The consistency of a CSS rule.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									color:red;
+									text-align:center;
+								}
+
+								h2, h1 {
+									color:blue;
+									text-align:center;
+								}
+
+								ul>li {
+									color:yellow;
+									text-align:center;
+								}
+
+							(...)
+							```
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Background Color:</b> The background-color property is used to set the background-color of the text.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									background-color: red;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  The background is red.
+								</p>
+							(...)
+							```
+							<p style="background-color: red; width: 400px; margin: auto">
+								The background is red.
+							</p>
+							<aside class="notes">
+								The selector points to the HTML element you want to style.
+
+								The declaration block contains one or more declarations separated by semicolons.
+
+								Each declaration includes a property name and a value, separated by a colon.
+							</aside>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Text Color:</b> The color property is used to set the color of the text.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									color: red;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  The text is red.
+								</p>
+							(...)
+							```
+							<p style="color: red;">
+								The text is red.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Font Family:</b> Set the font of an element.</li>
+							</ul>
+							```css
+							(... css file)								p {
+									font-family: 'Times New Roman', Times, serif;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  This is a paragraph, shown in the Times New Roman font.
+								</p>
+							(...)
+							```
+							<p style="font-family: 'Times New Roman', Times, serif;">
+								This is a paragraph, shown in the Times New Roman font.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Borders:</b> The border-style property specifies what kind of border to display.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									border-style: solid;
+									border-width: 1px;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  White 1px border;
+								</p>
+							(...)
+							```
+							<p style="border-style: solid;	border-width: 1px; width: 400px; margin:auto;">
+								White 1px border
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Margin:</b> The margin clears an area around an element (outside the border).</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									margin-right: 100px;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  This paragraph is 100px to the right.
+								</p>
+							(...)
+							```
+							<p style="marign:100px; width: 500px;">
+								This paragraph is 100px to the right.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Padding:</b> The padding clears an area around the content (inside the border) of an element.</li>
+							</ul>
+							```css
+							(... css file)
+								p {
+									padding-right: 100px;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p>
+								  This paragraph is 100px to the right.
+								</p>
+							(...)
+							```
+							<p style=" border-style: solid;	border-width: 1px; width: 400px; padding: 100px;">
+								This paragraph is 100px to the right.
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>ID:</b> Select a specific element</li>
+							</ul>
+							```css
+							(... css file)
+								#my-special-element {
+									font-style: italic;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p id="my-special-element">
+								  This special element is in italic. 
+								</p>
+							(...)
+							```
+							<p style=" font-style: italic;">
+								This special element is in italic. 
+							</p>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							<ul>
+								<li><b>Class:</b> Set a specific style for a set of elements</li>
+							</ul>
+							```css
+							(... css file)
+								.my-special-set-of-element {
+									font-style: bold;
+								}
+							(...)
+							```
+
+							```html
+							(... html file)
+								<p class="my-special-set-of-element">
+								  This special set of elements is in bold. 
+								</p>
+								<h4 class="my-special-set-of-element">
+								  This special set of elements is in bold. 
+								</h4>
+							(...)
+							```
+							<p style=" font-style: bold;">
+								This special set of elements is in bold. 
+							</p>
+							<h4 style=" font-style: bold;">
+							  This special set of elements is in bold. 
+							</h4>
+						</script>
+					</section>
+
+					<section data-markdown>
+						<script type="text/template">
+							## Hands-on
+
+							Now you try it! Put some style on your HTML doc.
+							
+							```html
+							<!DOCTYPE html>
+							<html>
+								<head>
+								  <meta charset="utf-8">
+								  <title>Test</title>
+								  <link rel="stylesheet" type="text/css" href="style.css">
+								</head>
+								<body>
+									(...)
+								</body>
+							</html>
+							```
+							```css
+							elem1 {
+								property1: value1;
+							}
+							elem2 {
+								property2: value2;
+							}
+							```
+						</script>
+					</section>
+
 				</section>
 
 				<section>
-					<h2>Intro conclusion</h2>
+					<h2>In conclusion</h2>
 					<p>
 					With this we wanted to show you one important key concept that you must always remember! HTML is used for meaning and CSS is used only for the presentation. As you saw it, HTML is nothing more than a bunch of tags that structure our content. The visual formatting of that content comes later when we tackle CSS.
 					</p>
@@ -148,17 +660,24 @@
 						<h1>Templates</h1>
 						<h3>But is this all of it!? No! Not a chance.</h3>
 					</section>
+
 					<section>
-						<h2>INK example</h2>
+						<h2>Here's an example of what we mean...</h2>
 						<h3><a target="_blank" href="http://jsbin.com/winupubofego/1/edit">Source</a></h3>
 						<h3><a target="_blank" href="http://jsbin.com/winupubofego/">Demo</a></h3>
 					</section>
 					<section>
-						<h3>Why use them</h3>
+						<h3>Why use them?</h3>
 
-						<h3>What templates should you choose based on your needs</h3>
+						<p>Because they're easy to use and they do what they're supposed to...</p>
+					</section>
+					<section>
+						<h3>What templates should you choose based on your needs?</h3>
 
+					</section>
+					<section>
 						<h3>How to use them</h3>
+
 					</section>
 					<section>
 						<h2>More templates & Hands on</h2>
@@ -174,7 +693,12 @@
 				<section>
 					<section>
 						<h1>Domain</h1>
-						<h2>Get one just for you</h2>
+						<h2>What!? Who the hell is that?</h2>
+					</section>
+					<section>
+						<h2>What is it?</h2>
+						<p>A domain name is a unique name that identifies an internet resource such as a website.<p>
+						<p><small>e.g: <a href="http://194.117.42.133">194.117.42.133</a></small>
 					</section>
 					<section>
 						<h2>Where to get them?</h2>
@@ -182,7 +706,7 @@
 							<li>https://name.com</li>
 							<li>https://www.godaddy.com/</li>
 							<li>https://namecheap.com</li>
-							<li>https://www.dns.pt/ (o que é nacional é bom)</li>
+							<li>https://www.dns.pt/</li>
 						</ul>
 					</section>
 				</section>
@@ -190,12 +714,17 @@
 				<section>
 					<section>
 						<h1>Hosting</h1>
+						<h2>Where should i put all this stuff?</h2>
 					</section>
 					<section>
-						<h2>What is it</h2>
+						<h2>What is it?</h2>
+						<p>A hosting service allows individuals and organizations to make their website accessible via the World Wide Web.</p>
 					</section>
 					<section>
 						<h2>Sites</h2>
+						<ul>
+							<li>https://www.digitalocean.com</li>
+						</ul>
 					</section>
 					<section>
 						<h2>How to work with it</h2>
